@@ -140,32 +140,6 @@ principales auditadas y documentadas en
 El archivo de dependencias también incluye las restricciones utilizadas para
 `requests`, `certifi`, `IPython`, `nbformat`, `ipywidgets` e `ipympl`.
 
-## Instalación
-
-Clonar el repositorio y entrar en su directorio:
-
-```powershell
-git clone https://github.com/crst1970/SIIA-2026-01-Salgado-rsfMRI-Causal-ML.git
-cd SIIA-2026-01-Salgado-rsfMRI-Causal-ML
-```
-
-Crear y activar un entorno virtual con Python 3.11:
-
-```powershell
-py -3.11 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
-
-En Linux o macOS, la activación equivalente es:
-
-```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
 
 ## Ejecución
 
@@ -194,17 +168,6 @@ entorno virtual creado durante la instalación.
 - Validación: 5 particiones estratificadas y agrupadas por sitio.
 - Semilla aleatoria principal: 42.
 - Parámetro de Graphical Lasso: `alpha = 0.5`.
-
-## Pruebas rápidas
-
-Desde la raíz del repositorio:
-
-```powershell
-python -m unittest discover -s tests -v
-```
-
-Estas pruebas verifican importaciones y operaciones básicas del pipeline sin
-descargar ni procesar la cohorte completa de ABIDE.
 
 ## Licencia
 
